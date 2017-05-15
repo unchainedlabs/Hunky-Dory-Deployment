@@ -1,0 +1,6 @@
+Videology viewer log begun 5/7/2017 1:06:30 AM
+01:06:30.7 Set brightness to 64
+01:06:30.7 Set contrast to 64
+01:06:44.8 Call cw->Start
+01:06:51.2 Call cw->Stop
+01:06:51.3 Call cw->Close
