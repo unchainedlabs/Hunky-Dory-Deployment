@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Analysis.dll" size="397312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Analysis.dll" size="472064">
       <assemblyIdentity name="Analysis" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rj/gb8KvMRmw4PPoiRfj5v841+d1N+rIIpMqR/QduYM=</dsig:DigestValue>
+        <dsig:DigestValue>odWq+Suabmt/4wxmT6VIyK5x2duFCHNJIyvdkYljG5Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="59904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="61952">
       <assemblyIdentity name="Common" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hBhzNMMx3wu2P+qbjDYu1lxsMHuaMvbWuFj2KBI4l5I=</dsig:DigestValue>
+        <dsig:DigestValue>rQmVamPmwBJZz7OFGOQ8R6Cc+qO0KUvovirQ1Nm2TbA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -80,13 +80,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5BaseHandler.dll" size="15360">
-      <assemblyIdentity name="HDF5BaseHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="HDF5BaseHandler" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ej9mFG5pHQ0jF9UaFYt0Mi6LRrc/zNU+k8rOA2JfsOE=</dsig:DigestValue>
+        <dsig:DigestValue>EEDcc5jcArZrqVUAJn/S6zpumHibDrw+vdbXLWLBvLg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,38 +103,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5HunkFileHandler.dll" size="96768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5HunkFileHandler.dll" size="110080">
       <assemblyIdentity name="HDF5HunkFileHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Mb8GPi3U8aLWfSOQXJoSXYrHZu9913zly3+ML5HmkRQ=</dsig:DigestValue>
+        <dsig:DigestValue>9Wp3SYxODV4/zXbATPs9oBCAwrhckBx4xNqv4NK/gOo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HUNKDataFit.dll" size="64512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HUNKDataFit.dll" size="20992">
       <assemblyIdentity name="HUNKDataFit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fOAUg1A3OON/4EInd1+Ku1nauKtcHnaG5SrTyoIrxbc=</dsig:DigestValue>
+        <dsig:DigestValue>E84M9Wc4HUQxwo7Pu7eLTRBEuTvhRe6VTWysDlQTKAE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HunkyDoryAnalysis.exe" size="891360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HUNKDataFittingEngineWrapper.dll" size="5120">
+      <assemblyIdentity name="HUNKDataFittingEngineWrapper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iNtbvl/JGFOeEotY5fehLeOix1ZabOngbUgHLn4rnpo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HunkyDoryAnalysis.exe" size="951264">
       <assemblyIdentity name="HunkyDoryAnalysis" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>B30BEhmluwnG72Ot848G+l+YGLHJltN4aN1kpeZ7PKo=</dsig:DigestValue>
+        <dsig:DigestValue>NP8BKVphyy5eWKtHMY2nVnt8eJ5ee/aRwiCTOjoUSaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -211,6 +223,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.DataPresenter.ExcelExporter.v15.2.dll" size="78848">
+      <assemblyIdentity name="InfragisticsWPF4.DataPresenter.ExcelExporter.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E6jfH2Tj2G2OyI/wMZx+QmpFhDEV9n6pahljju46LeI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.DataPresenter.v15.2.dll" size="3740160">
       <assemblyIdentity name="InfragisticsWPF4.DataPresenter.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -259,6 +283,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Documents.Core.v15.2.dll" size="1429504">
+      <assemblyIdentity name="InfragisticsWPF4.Documents.Core.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ila9vBSHvVwRDYNk89gyHOsMIANXqm5aE30B5kyzaDg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Documents.Excel.v15.2.dll" size="2424832">
+      <assemblyIdentity name="InfragisticsWPF4.Documents.Excel.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>L8epy67UiqT3ky+tWzM6rnnNE0V29wotv9FLgqU4h/Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Documents.IO.v15.2.dll" size="229376">
       <assemblyIdentity name="InfragisticsWPF4.Documents.IO.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -279,6 +327,42 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>RMJOMoG77pOE8lUXMAkD0rPiZxTviYY+AX78bTBafeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Math.Calculators.v15.2.dll" size="19456">
+      <assemblyIdentity name="InfragisticsWPF4.Math.Calculators.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>owyjo/NmiEQFyvX2Eil8UbvGrHxZYWaLxR+8RHHQbbk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Math.v15.2.dll" size="161792">
+      <assemblyIdentity name="InfragisticsWPF4.Math.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KMNdS4YrFbwuIJgbf157ubU1nhyPpMt8/t27yQxbwRQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InfragisticsWPF4.Reporting.v15.2.dll" size="198656">
+      <assemblyIdentity name="InfragisticsWPF4.Reporting.v15.2" version="15.2.20152.2038" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CBDG+ygMesA98awykMMHMhPI4E6E//qPihzkqtJQXlY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -547,170 +631,326 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.dll" size="3706880">
-      <assemblyIdentity name="Telerik.Windows.Controls" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.dll" size="3726336">
+      <assemblyIdentity name="Telerik.Windows.Controls" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rqSIfL1f7MADEKKjhPPqwizPCZymGQsZ44z8aUQ1y2I=</dsig:DigestValue>
+        <dsig:DigestValue>4HP0e5pYYaCDGgKmquODgJT3H5tur2RLog615LD4K/k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.GridView.dll" size="2740224">
-      <assemblyIdentity name="Telerik.Windows.Controls.GridView" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Data.dll" size="933888">
+      <assemblyIdentity name="Telerik.Windows.Controls.Data" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K6LvoRvWj6hJlRBT6qFeLzQ/YU+mlgIvSsrbYBvwbfk=</dsig:DigestValue>
+        <dsig:DigestValue>WeP6/fz4sGSFZcdyY1RSY5vitalnamqvcJZ6yX6wgQA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Input.dll" size="2018816">
-      <assemblyIdentity name="Telerik.Windows.Controls.Input" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.GridView.dll" size="2747904">
+      <assemblyIdentity name="Telerik.Windows.Controls.GridView" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PIGSgymJDVQVpI2hwPng+OLBxpoW2pVBVR94YIYiV8Y=</dsig:DigestValue>
+        <dsig:DigestValue>DvCryJ/p6PTqp4726hM9Od5EbfyL1K8hEeycB+m3Qtw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Navigation.dll" size="3406848">
-      <assemblyIdentity name="Telerik.Windows.Controls.Navigation" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.ImageEditor.dll" size="644096">
+      <assemblyIdentity name="Telerik.Windows.Controls.ImageEditor" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NdGAq3SfUgxyzeziRkRGqTUwZLyW8o8cXycpDyBz4cI=</dsig:DigestValue>
+        <dsig:DigestValue>Jvqafqq4pEyhNe0cQ8/bpmrET7JfgmsSjp71aocgAsg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.RibbonView.dll" size="1768448">
-      <assemblyIdentity name="Telerik.Windows.Controls.RibbonView" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Input.dll" size="2022400">
+      <assemblyIdentity name="Telerik.Windows.Controls.Input" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DAzNngARvGvSbGt3iPqehz+ygEl7zlqIojE2BhdI9O8=</dsig:DigestValue>
+        <dsig:DigestValue>Zx9/hroQmDqksefvZpCgbhMGLeqK+sjt5fwCRGVsla8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Spreadsheet.dll" size="4907008">
-      <assemblyIdentity name="Telerik.Windows.Controls.Spreadsheet" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Navigation.dll" size="3410432">
+      <assemblyIdentity name="Telerik.Windows.Controls.Navigation" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5xOvMRiGZ6PBJEjmtwACfXm9DfL8wY2yJuuilAZJKkE=</dsig:DigestValue>
+        <dsig:DigestValue>FfMg/HHLY2R2aFdBXNki1HOFg22ZqDFj9VoBRvNtlPQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Telerik.Windows.Controls.resources.dll" size="363520">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y4F+onBys/4Ftcu29bFPQeq/fkxQAJtbXBWO/24lFXw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Telerik.Windows.Controls.resources.dll" size="362496">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LD8Sq5mb8uEXWhzgC2l8tZMkj4XFnbLxOvg4d9nLlCc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Telerik.Windows.Controls.resources.dll" size="362496">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5q4YqZhg+BhzZ2qBo6DSgHtkFI5phkZwnUoKURS3rog=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\Telerik.Windows.Controls.resources.dll" size="359424">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cRm8NLWWy7yBnayem8o/DcZIZx7bix/avB8+mp7ngf4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl\Telerik.Windows.Controls.resources.dll" size="358912">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="nl" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>42IuGF1/58I2GXqby2XT63ysNCtoTixmu1SirzVWIyw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\Telerik.Windows.Controls.resources.dll" size="361472">
+      <assemblyIdentity name="Telerik.Windows.Controls.resources" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r/4LxWn6UhrIuStojncldhEBAT8DUZkbTcGvRx9FzhM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.RibbonView.dll" size="1772032">
+      <assemblyIdentity name="Telerik.Windows.Controls.RibbonView" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DIvwyYgTuxNJy2qNV8wkKscyQXJ/qUT8fOtPuhglFJM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.RichTextBoxUI.dll" size="2520576">
+      <assemblyIdentity name="Telerik.Windows.Controls.RichTextBoxUI" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S2HnEcdmxN2X6l1jpXvGrEIOyrp8g0hMuuQywMHZO/s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Controls.Spreadsheet.dll" size="4906496">
+      <assemblyIdentity name="Telerik.Windows.Controls.Spreadsheet" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H1wQTJIA/4VEWkPxzFPGoPrgCG2VECrqerPVLZQVj9I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Data.dll" size="467456">
-      <assemblyIdentity name="Telerik.Windows.Data" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Telerik.Windows.Data" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TyiQMwMXWq2yPr4pOyr+xCFcR9pekyeIuUSuMjt6TVY=</dsig:DigestValue>
+        <dsig:DigestValue>u4GogN9/Rn0l2N3WE5OpbURtMlJpXNpDkSol3O4WS38=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.dll" size="3004928">
-      <assemblyIdentity name="Telerik.Windows.Documents" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.dll" size="3005440">
+      <assemblyIdentity name="Telerik.Windows.Documents" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WDKt8K9E5aSl1mT94Ou4EVY6iVy+zJ3QzS5g+5cEENg=</dsig:DigestValue>
+        <dsig:DigestValue>sNKKH6gvLGsLMsZ+7pKhG62xB1SnCQY5KpUHcKhlYRw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Core.dll" size="353280">
-      <assemblyIdentity name="Telerik.Windows.Documents.Core" version="2016.3.1021.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Core.dll" size="359936">
+      <assemblyIdentity name="Telerik.Windows.Documents.Core" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>au9PakmiGp537sSIA6ZmIkJ46qUqCSuRL2jk65xh6EM=</dsig:DigestValue>
+        <dsig:DigestValue>DmrXbHVhgfbaDn/NxyajlH4SAr0aOy5qn0UmOahwkoM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Fixed.dll" size="2235392">
+      <assemblyIdentity name="Telerik.Windows.Documents.Fixed" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zctMZpUbtUBYZH5g1PUffLEX6AHgEjWJI7rpdTFrB+8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Flow.dll" size="1800704">
-      <assemblyIdentity name="Telerik.Windows.Documents.Flow" version="2016.3.1021.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Telerik.Windows.Documents.Flow" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UAP9+2g45ZfkYn98qLfNXBaXmJqg/ktqFbz3M88yFT8=</dsig:DigestValue>
+        <dsig:DigestValue>GnNpRQdHcO4CdcAV3YgkbFdteSNC1VipJLw9UgntkEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.FormatProviders.OpenXml.dll" size="240128">
-      <assemblyIdentity name="Telerik.Windows.Documents.FormatProviders.OpenXml" version="2016.3.1024.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Telerik.Windows.Documents.FormatProviders.OpenXml" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zKuAI8OSNiOPKIYJI+QYehOn3U36TvxHDQZoRA4oGAg=</dsig:DigestValue>
+        <dsig:DigestValue>djgvbGmtqJftWFOgpBni9Rcx1XlQeYwfm9T/O8KwMec=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.FormatProviders.Pdf.dll" size="1577472">
+      <assemblyIdentity name="Telerik.Windows.Documents.FormatProviders.Pdf" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z0Gn37UQNwFYBehtS3e3lsxY5R4diRjHgIBpTdm0d3s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.FormatProviders.Rtf.dll" size="244736">
+      <assemblyIdentity name="Telerik.Windows.Documents.FormatProviders.Rtf" version="2017.1.117.45" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hQ28OjT/4kwfMxA0WpZFNEp56lP9gtYLr+OvHWj5XBY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Spreadsheet.dll" size="1788416">
-      <assemblyIdentity name="Telerik.Windows.Documents.Spreadsheet" version="2016.3.1021.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Telerik.Windows.Documents.Spreadsheet" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s2iA9FIYlGJjPMnvBzYIiqjjraT5rSuZGsxg5Gn2GOM=</dsig:DigestValue>
+        <dsig:DigestValue>n6kf4ldDidtUSGx95SR4tT7n/jHhweXc/8aLsbJDTyE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll" size="338944">
-      <assemblyIdentity name="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml" version="2016.3.1021.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll" size="339456">
+      <assemblyIdentity name="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>12bEDkvZd/Mrg6Dp6Ol0F2SCmY4zpXw2qMGv0/CQ48U=</dsig:DigestValue>
+        <dsig:DigestValue>bvTg5Omt+2Bme0yyLvAgzmwrWOd5eyPL8I4lhP/GqyI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Themes.Office2013.dll" size="1993728">
+      <assemblyIdentity name="Telerik.Windows.Themes.Office2013" version="2016.3.1024.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6IZ9HblXwp7taqF0c1Hl0Kme1OeuMwOHtuUOhyTaThQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Windows.Zip.dll" size="144896">
-      <assemblyIdentity name="Telerik.Windows.Zip" version="2016.3.1021.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Telerik.Windows.Zip" version="2017.1.109.40" publicKeyToken="5803CFA389C90CE7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>j709U1/SMTJHaGVe7UxCPP3BRoupurr7CfxwUkUIyIY=</dsig:DigestValue>
+        <dsig:DigestValue>S+AdQE2RrMyNOzsd/voqpNi3HiO6uNIzl63FsyVd79w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -726,13 +966,25 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="HunkyDoryAnalysis.exe.config" size="606">
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Toolkit.dll" size="900608">
+      <assemblyIdentity name="Xceed.Wpf.Toolkit" version="2.0.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Nj27IMEG8mHe7xQ1xNUsy+1wLsdBDw3l2usFhdEY9YQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HunkyDoryAnalysis.exe.config" size="589">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9ele6svJMWD9C6C91ufO+FHqtbpYIjhp6kWyUBTtrTY=</dsig:DigestValue>
+      <dsig:DigestValue>pJ++pgEyJxylMi6bu14ojkHQyhr0fxAysU1GSuUPTec=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UNcle_logo_FINAL.ico" size="54224">
