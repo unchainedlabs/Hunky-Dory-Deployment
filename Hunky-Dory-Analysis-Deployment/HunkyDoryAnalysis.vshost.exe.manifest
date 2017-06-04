@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Analysis.dll" size="473600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Analysis.dll" size="405504">
       <assemblyIdentity name="Analysis" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>32dUhJnc1VHESBWlggy6bZm8hB2MN7lIA24XOXU19ms=</dsig:DigestValue>
+        <dsig:DigestValue>wo4I0PwBCMIrU7egwyoHx1l2xP8fRPCzV90wIqqQS2E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="61952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Common.dll" size="59904">
       <assemblyIdentity name="Common" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>itO8g8f35TuVOVvH7aP5ghoK87/5fYc9MOD5rY3OZ18=</dsig:DigestValue>
+        <dsig:DigestValue>OX3xu92Q7Xi6idAyw8aO2JnEYDO+VRMD70hA4Km1pCs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -80,13 +80,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5BaseHandler.dll" size="15360">
-      <assemblyIdentity name="HDF5BaseHandler" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="HDF5BaseHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OUC2p7AA6HUACjUW72b9GdMhr/b5QDxEMQ8NmxcaU9k=</dsig:DigestValue>
+        <dsig:DigestValue>IKnvel7HogHRQXqNm5amT7c4kqdvLU9mmrdjYjW5G/M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,26 +103,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5HunkFileHandler.dll" size="110080">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HDF5HunkFileHandler.dll" size="101888">
       <assemblyIdentity name="HDF5HunkFileHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fGfDys3sYOXuuzPf93Kd58/JoEzknGJnjYK9vEOl12Y=</dsig:DigestValue>
+        <dsig:DigestValue>TdR0tT2+q1GGHpwxGAnjPKUg4Rdv59TUXycV28qW3e0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HUNKDataFit.dll" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HUNKDataFit.dll" size="19968">
       <assemblyIdentity name="HUNKDataFit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QOCrfs+0qmx2g6hiIRwI8SoV6K4Wot+i9XOXpXD+HFg=</dsig:DigestValue>
+        <dsig:DigestValue>qJWJXgDA92tL5SFN8Uh2FNwagDdqK3oFvQt+gmrYDXo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -134,19 +134,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kHX3udsrXg4YxhE3TkSAt2CVjZehNowAZtSBJRgmIg0=</dsig:DigestValue>
+        <dsig:DigestValue>tNOVOFoClzf1CTtK8hy7tOYaBC9duXBF11T2PzsgpFU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HunkyDoryAnalysis.exe" size="951264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HunkyDoryAnalysis.exe" size="892896">
       <assemblyIdentity name="HunkyDoryAnalysis" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SuOeh9V7oU5ungiMX3GY+RCYiXx7i9r2MAcZc+xTyi4=</dsig:DigestValue>
+        <dsig:DigestValue>vl4HKpyT+X6UL0GlY6EpYiEoW0pUIsH4/OOSlhLEo6o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
