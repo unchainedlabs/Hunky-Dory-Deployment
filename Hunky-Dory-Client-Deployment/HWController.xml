@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HWController
+</name>
+</assembly>
+<members>
+<member name="M:HUNKyDory.HWController.clsCannula.Init">
+	<summary>
+ Initialize the cannula class
+ </summary>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.clsCannula.RinseProteinDispenser(System.Int32)">
+	<summary>
+ The routine is needed so that it can be called by
+ Concentration Ranging.
+ </summary>
+	<param name="cycles"></param>
+	<remarks>
+ This assumes that the formulator is over the wash station.
+ </remarks>
+</member><member name="M:HUNKyDory.HWController.clsCannula.SetProteinSpeed(System.Int32,System.Int32)">
+	<summary>
+ Set the protein syringe speed based on the cannula that is installed
+ </summary>
+	<param name="StartSpeed"></param>
+	<param name="TransitSpeed"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.clsCannula.HomeProteinSyringe(System.Int32,System.Int32,HUNKyDory.HWController.clsError)">
+	<summary>
+ Home the protein syringe
+ </summary>
+	<param name="StartSpeed"></param>
+	<param name="TransitSpeed"></param>
+	<param name="objErr"></param>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.clsCannula.GetAirBubbleSipSteps">
+	<summary>
+ Get Air Bubble Sip Steps
+   When the protein syringe is first loaded, air is 
+   drawn out through a port in the side.  The number
+   of steps (using the main syringe) depends on the
+   version of the protein syringe.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:HUNKyDory.HWController.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:HUNKyDory.HWController.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:HUNKyDory.HWController.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:HUNKyDory.HWController.modSpectrometer.SendCommand(System.String,System.String@,HUNKyDory.HWController.clsError@,System.Boolean)">
+	<summary>
+ Lock the spectormeter channel and send a command
+ </summary>
+	<param name="cCommand"></param>
+	<param name="cResponse"></param>
+	<param name="objErr"></param>
+	<param name="bWaitResponse"></param>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.modSpectrometer.SendCommandNoLock(System.String,System.String@,HUNKyDory.HWController.clsError@,System.Boolean)">
+	<summary>
+ Send a command without any lock.  The caller should lock the 
+ channel, allowing for a series of commands to be used at the 
+ higher level.
+ </summary>
+	<param name="cCommand"></param>
+	<param name="cResponse"></param>
+	<param name="objErr"></param>
+	<param name="bWaitResponse"></param>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.modSpectrometer.ScanSpectrum(System.Int32,HUNKyDory.HWController.clsError@)">
+	<summary>
+ ScanSpectrum will initiate the scan in the flourometer
+ 
+ </summary>
+	<param name="MemoryBank"></param>
+	<param name="objErr"></param>
+	<remarks></remarks>
+</member><member name="M:HUNKyDory.HWController.modSpectrometer.ReadSpectrum_Local(System.Int32,HUNKyDory.HWController.clsError@)">
+	<summary>
+ ReadSpecturm will read the spectrum data out of the flourometer 
+ and put into the array
+ </summary>
+	<param name="MemoryBank"></param>
+	<param name="objErr"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

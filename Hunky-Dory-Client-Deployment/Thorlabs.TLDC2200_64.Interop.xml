@@ -1,0 +1,1296 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Thorlabs.TLDC2200_64.Interop</name>
+    </assembly>
+    <members>
+        <member name="T:Thorlabs.TLDC2200_64.Interop.TLDC2200">
+            <summary>
+            DotNet class to operate the THorlabs DC2200 instrument
+            </summary>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.Finalize">
+            <summary>
+            Release the resources on the Thorlabs DC2200 instrument
+            </summary>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.#ctor(System.IntPtr)">
+            <summary>
+            This function creates an IVI instrument driver session, typically using the C session instrument handle.
+            </summary>
+            <param name="Instrument_Handle">
+            The instrument handle that is used to create an IVI instrument driver session.
+            </param>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            This function initializes the instrument driver session and performs the following initialization actions:
+            
+            (1) Opens a session to the Default Resource Manager resource and a session to the selected device using the Resource Name.
+            (2) Performs an identification query on the Instrument.
+            (3) Resets the instrument to a known state.
+            (4) Sends initialization commands to the instrument.
+            (5) Returns an instrument handle which is used to differentiate between different sessions of this instrument driver.
+            
+            Notes:
+            (1) Each time this function is invoked an unique session is opened.  
+            </summary>
+            <param name="Resource_Name">
+            This parameter specifies the interface of the device that is to be initialized. The exact syntax to be used for this parameter is shown in the note below.
+            </param>
+            <param name="ID_Query">
+            Performs an In-System Verification.
+            Checks if the resource matches the BP2 vendor and product id.
+            </param>
+            <param name="Reset_Device">
+            Performs Reset operation and places the instrument in a pre-defined reset state.
+            </param>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_device_count(System.UInt32@)">
+            <summary>
+            
+            </summary>
+            <param name="Device_Count">
+            
+            </param>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS              Initialization successful
+            VI_WARN_NSUP_ID_QUERY   Identification query not supported
+            VI_WARN_NSUP_RESET      Reset not supported
+            
+            
+            Error Codes
+            ----------------------------------------------------------------
+            VI_ERROR_FAIL_ID_QUERY  Instrument identification query failed
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_device_info(System.UInt32,System.Text.StringBuilder,System.Text.StringBuilder,System.Text.StringBuilder,System.Boolean@,System.Text.StringBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="Index">
+            
+            </param>
+            <param name="Manufacturer">
+            
+            </param>
+            <param name="Model_Name">
+            
+            </param>
+            <param name="Serial_Number">
+            
+            </param>
+            <param name="Device_Available">
+            
+            </param>
+            <param name="Resource_Name">
+            
+            </param>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS              Initialization successful
+            VI_WARN_NSUP_ID_QUERY   Identification query not supported
+            VI_WARN_NSUP_RESET      Reset not supported
+            
+            
+            Error Codes
+            ----------------------------------------------------------------
+            VI_ERROR_FAIL_ID_QUERY  Instrument identification query failed
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.reset">
+            <summary>
+            Places the instrument in a default state.
+            </summary>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS              Reset ooperation successful
+            VI_WARN_NSUP_RESET      Reset not supported
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.self_test(System.Int16@,System.Text.StringBuilder)">
+            <summary>
+            This function causes the instrument to perform a self-test and returns the result of that self-test.
+            </summary>
+            <param name="Self_Test_Result">
+            Numeric result from self-test operation 
+            0 = no error (test passed)
+            </param>
+            <param name="Self_Test_Message">
+            Self-test status message.
+            </param>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS              Self-test operation successful
+            VI_WARN_NSUP_SELF_TEST  Self-test not supported
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.error_query(System.Int32@,System.Text.StringBuilder)">
+            <summary>
+            Queries the instrument and returns instrument-specific error information.
+            </summary>
+            <param name="Error_Code">
+            Instrument error code.
+            </param>
+            <param name="Error_Message">
+            Error message.
+            </param>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS                Error query operation successful
+            VI_WARN_NSUP_ERROR_QUERY  Error query not supported
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.revision_query(System.Text.StringBuilder,System.Text.StringBuilder)">
+            <summary>
+            This function returns the revision of the instrument driver and the firmware revision of the instrument being used.
+            </summary>
+            <param name="Instrument_Driver_Revision">
+            Instrument driver revision.Instrument driver revision.
+            </param>
+            <param name="Firmware_Revision">
+            Instrument firmware revision.
+            </param>
+            <returns>
+            Operational return status. Contains either a completion code or an error code. Instrument driver specific codes that may be returned in addition to the VISA error codes defined in VPP-4.3 and vendor specific codes, are as follows.
+            
+            Completition Codes
+            ----------------------------------------------------------------
+            VI_SUCCESS               Revision query successful
+            VI_WARN_NSUP_REV_QUERY   Instrument revision query not supported
+            
+            
+            Vendor Specific Codes
+            ----------------------------------------------------------------
+            For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_head_info(System.Text.StringBuilder,System.Text.StringBuilder,System.Int32@)">
+            <summary>
+            This function returns the LED head identification information.
+            </summary>
+            <param name="Serial_Number">
+            This parameter returns the serial number of the connected LED head.
+            
+            Notes:
+            (1) The array must contain at least 256 elements ViChar[256].
+            (2) You may pass VI_NULL if you do not need this value.
+            
+            </param>
+            <param name="Name">
+            This parameter returns the name of the connected LED head.
+            
+            Notes:
+            (1) The array must contain at least 256 elements ViChar[256].
+            (2) You may pass VI_NULL if you do not need this value.
+            
+            </param>
+            <param name="Type">
+            This parameter returns the LED head type.
+            
+            Valid return values are:
+            
+            NO_HEAD                     (0)   - no LED head found
+            FOUR_CHANNEL_HEAD           (1)   - four channel LED head
+            ONE_CHANNEL_HEAD            (2)   - single channel LED head
+            NOT_SUPPORTED_HEAD          (253) - not supported head
+            UNKNOWN_HEAD                (254) - unknown head
+            ONE_CHANNEL_HEAD_OLD        (255) - old standard LED head
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_limit_current_range(System.UInt16,System.Double,System.Double@,System.Double@)">
+            <summary>
+            Reads the current limit.
+            </summary>
+            <param name="Terminal">
+            Select output terminal: 
+             
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            </param>
+            <param name="Voltage">
+            Limit Voltage
+            </param>
+            <param name="Minimum_Current">
+            This parameter returns the user defined current limit in ampere.
+            </param>
+            <param name="Maximum_Current">
+            This parameter returns the user defined current limit in ampere.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setLimitCurrent(System.Single)">
+            <summary>
+            Sets the current limit. This limit may not exceed the LEDs limit specified in the LED head.
+            </summary>
+            <param name="Limit">
+            This parameter specifies the current limit in ampere.
+            
+            Range:   0.0 .. 2.0 (A) (limited by maximum limit)
+            Default: 0.0 (A)
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getLimitCurrent(System.Single@)">
+            <summary>
+            Reads the current limit.
+            </summary>
+            <param name="Limit">
+            This parameter returns the user defined current limit in ampere.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_limit_voltage_range(System.UInt16,System.Double,System.Double@,System.Double@)">
+            <summary>
+            Reads the current limit.
+            </summary>
+            <param name="Terminal">
+            Select output terminal: 
+             
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            </param>
+            <param name="Current">
+            Limit Voltage
+            </param>
+            <param name="Minimum_Voltage">
+            This parameter returns the user defined current limit in ampere.
+            </param>
+            <param name="Maximum_Voltage">
+            This parameter returns the user defined current limit in ampere.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_limit_voltage(System.Double)">
+            <summary>
+            Sets limit voltage value
+            </summary>
+            <param name="Limit_Voltage">
+            Limit Voltage
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_limit_voltage(System.Double@)">
+            <summary>
+            Returns limit voltage value
+            </summary>
+            <param name="Limit_Voltage">
+            Limit Voltage
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setOperationMode(System.Int32)">
+            <summary>
+            Sets the operation mode.
+            </summary>
+            <param name="Operation_Mode">
+            This parameter specifies the operation mode.
+            
+            Valid values are:
+            
+            TLDC2200_LD_OPMODE_CC       (1)   // constant current mode
+            TLDC2200_LD_OPMODE_CB       (2)   // constant brightness mode
+            TLDC2200_LD_OPMODE_PWM      (3)   // PWM mode 
+            TLDC2200_LD_OPMODE_PULS     (4)   // Pulse mode 
+            TLDC2200_LD_OPMODE_IMOD     (5)   // Internal modulation mode
+            TLDC2200_LD_OPMODE_EMOD     (6)   // External modulation mode
+            TLDC2200_LD_OPMODE_TTL      (7)   // TTL mode
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getOperationMode(System.Int32@)">
+            <summary>
+            Gets the actual operation mode.
+            </summary>
+            <param name="Operation_Mode">
+            This parameter returns the actual operation mode.
+            
+            constant current mode      (0) 
+            PWM mode                   (1)  
+            External modulation mode   (2)
+            PConstant Brightness       (3)
+            Pulse mode                 (4)
+            Internal modulation mode   (5)
+            TTL mode                   (6)
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_output_terminal(System.UInt16)">
+            <summary>
+            Select output terminal
+            </summary>
+            <param name="Terminal">
+            Select output terminal: 
+             
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_output_terminal(System.UInt16@)">
+            <summary>
+            Returns output terminal
+            </summary>
+            <param name="Terminal">
+            Returns output terminal.
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setLedOnOff(System.Boolean)">
+            <summary>
+            Sets the LED on or off.
+            </summary>
+            <param name="LED_On_Off">
+            This parameter specifies the LED output. ON (1) switches the LED on, OFF (0) switches the LED off.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getLedOnOff(System.Boolean@)">
+            <summary>
+            Gets the LED output state.
+            </summary>
+            <param name="LED_Output_State">
+            This parameter returns the LED output state. TRUE (1) relates to LED is on, FALSE (0) otherwise.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_output_condition(System.Boolean@)">
+            <summary>
+            Returns the output condition (query only, 1|0) 
+            </summary>
+            <param name="Output_Condition">
+            Returns the output condition (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_limit_current_protection(System.Boolean@)">
+            <summary>
+            Returns limit detection tripped
+            </summary>
+            <param name="Limit_Current">
+            Returns the limit current tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_limit_voltage_protection(System.Boolean@)">
+            <summary>
+            Returns limit detection tripped
+            </summary>
+            <param name="Limit_Voltage">
+            Returns the limit voltage tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_interlock_protection(System.Boolean@)">
+            <summary>
+            Returns interlock circuit protection tripped
+            </summary>
+            <param name="Interlock_Circuit_Protection">
+            Returns the interlock protection tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_connection_failure_protection(System.Boolean@)">
+            <summary>
+            Returns connection failure protection tripped
+            </summary>
+            <param name="Connection_Failure">
+            Returns the connection failure tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_driver_over_temperature_protection(System.Boolean@)">
+            <summary>
+            Returns driver over temperature protection tripped
+            </summary>
+            <param name="Driver_Over_Temperature">
+            Returns the driver over temperature tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_head_over_temperature_protection(System.Boolean@)">
+            <summary>
+            Returns head over temperature protection tripped
+            </summary>
+            <param name="Head_Over_Temperature">
+            Returns the head over temperature tripped. (query only, 1|0) 
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setConstCurrent(System.Single)">
+            <summary>
+            Sets the current used in the constant current mode.
+            </summary>
+            <param name="Current">
+            This parameter specifies the constant current in ampere.
+            
+            Range:   0.0...2.0 (A)
+            Default: 0.0 (A)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getConstCurrent(System.Single@)">
+            <summary>
+            Gets the current used for the constant current mode.
+            </summary>
+            <param name="Current">
+            This parameter returns the actual constant current in ampere.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_brightness(System.Double)">
+            <summary>
+            Sets the brightness.
+            </summary>
+            <param name="Brightness">
+            This parameter specifies the brightness in percent.
+            
+            Range   : 0.0..1.0
+            Default : 1.0
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_brightness(System.Double@)">
+            <summary>
+            Gets the brightness.
+            </summary>
+            <param name="Brightness">
+            This parameter returns the brightness in percent.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setPWMCurrent(System.Single)">
+            <summary>
+            Sets the current used in PWM mode.
+            </summary>
+            <param name="Current">
+            This parameter specifies the current used in PWM Mode in ampere.
+            
+            Range:   0.0 .. 2.0 (A)
+            Default: 0.0 (A)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getPWMCurrent(System.Single@)">
+            <summary>
+            Gets the current used in PWM mode.
+            </summary>
+            <param name="Current">
+            This parameter returns the current used in PWM Mode in ampere.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setPWMFrequency(System.Double)">
+            <summary>
+            Sets the PWM frequency in hertz.
+            </summary>
+            <param name="Frequency">
+            This parameter specifies the PWM frequency in hertz. The valid resolution between 1Hz and 1000Hz is 1Hz. Above 1kHz the valid resolution is 100Hz. The desired value will be coerced if the resolution is out of range.
+            
+            Range:   1 .. 10000 (Hz)
+            Default: 1 (Hz)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getPWMFrequency(System.Double@)">
+            <summary>
+            Gets the PWM frequency.
+            </summary>
+            <param name="Frequency">
+            This parameter returns the PWM frequency in hertz.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setPWMDutyCycle(System.Int32)">
+            <summary>
+            Sets the PWM Duty Cycle.
+            </summary>
+            <param name="Duty_Cycle">
+            This parameter specifies the PWM Duty Cycle in percent.
+            
+            Range:   1 .. 100 (%)
+            Default: 1 (%)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getPWMDutyCycle(System.Int32@)">
+            <summary>
+            Gets the PWM Duty Cycle.
+            </summary>
+            <param name="Duty_Cycle">
+            This parameter returns the PWM Duty Cycle in percent.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setPWMCounts(System.Int32)">
+            <summary>
+            Sets the PWM Counts.
+            </summary>
+            <param name="Counts">
+            This parameter specifies the PWM Counts. Zero means infinite.
+            
+            Range:   0 .. 100
+            Default: 0
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getPWMCounts(System.Int32@)">
+            <summary>
+            Gets the PWM Counts.
+            </summary>
+            <param name="Counts">
+            This parameter returns the PWM Counts. Zero means infinite.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_pulse_brightness(System.Double)">
+            <summary>
+            Sets the current used in PWM mode.
+            </summary>
+            <param name="Brightness">
+            This parameter specifies the current brightness used in PWM Mode in percent.
+            
+            Range   : 0.0..1.0
+            Default : 1.0
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_pulse_brightness(System.Double@)">
+            <summary>
+            Gets the current used in PWM mode.
+            </summary>
+            <param name="Brightness">
+            This parameter returns the current brightness used in PWM Mode in percent.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_pulse_on_time(System.Double)">
+            <summary>
+            Sets the PWM frequency.
+            </summary>
+            <param name="On_Time">
+            Time span the pulse is high in seconds.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_pulse_on_time(System.Double@)">
+            <summary>
+            Gets the PWM frequency.
+            </summary>
+            <param name="On_Time">
+            Time the pulse is high in seconds.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_pulse_off_time(System.Double)">
+            <summary>
+            Sets the PWM Duty Cycle.
+            </summary>
+            <param name="Off_Time">
+            Time the pulse is low in seconds.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_pulse_off_time(System.Double@)">
+            <summary>
+            Gets the PWM Duty Cycle.
+            </summary>
+            <param name="Off_Time">
+            Time the pulse is low in seconds.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_pulse_counts(System.Int32)">
+            <summary>
+            Sets the PWM Counts.
+            </summary>
+            <param name="Counts">
+            This parameter specifies the PWM Counts. Zero means infinite.
+            
+            Range:   0 .. 100
+            Default: 0
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_pulse_counts(System.Int32@)">
+            <summary>
+            Gets the PWM Counts.
+            </summary>
+            <param name="Counts">
+            This parameter returns the PWM Counts. Zero means infinite.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_internal_modulation_current_max(System.Double)">
+            <summary>
+            Sets the maximal current used in internal modulation mode.
+            </summary>
+            <param name="Current_Max">
+            This parameter specifies the maximal current used in intenal modulation mode in %.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_internal_modulation_current_max(System.Double@)">
+            <summary>
+            Gets the maximal current used in internal modulation mode.
+            </summary>
+            <param name="Current_Max">
+            This parameter returns the maximal current used in intenal modulation mode in %.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_internal_modulation_current_min(System.Double)">
+            <summary>
+            Sets the minimal current used in internal modulation mode.
+            </summary>
+            <param name="Current_Min">
+            This parameter specifies the minimal current used in intenal modulation mode in %.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_internal_modulation_current_min(System.Double@)">
+            <summary>
+            Gets the minimal current used in internal modulation mode.
+            </summary>
+            <param name="Current_Max">
+            This parameter returns the minimal current used in intenal modulation mode in %.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_internal_modulation_shape(System.Int32)">
+            <summary>
+            Select the shape for the internal modulation.
+            </summary>
+            <param name="Shape">
+            Select output terminal: 
+             
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_internal_modulation_shape(System.Int32@)">
+            <summary>
+            Returns the shape of the internal modulation.
+            </summary>
+            <param name="Shape">
+            Returns the shape of the internal modulation
+            0 = Sine
+            1 = Square
+            2 = Triangle
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_internal_modulation_frequency(System.Double)">
+            <summary>
+            Sets the PWM frequency in Hz.
+            </summary>
+            <param name="Frequency">
+            This parameter specifies the PWM frequency in hertz. The valid resolution between 1Hz and 1000Hz is 1Hz. Above 1kHz the valid resolution is 100Hz. The desired value will be coerced if the resolution is out of range.
+            
+            Range:   1 .. 10000 (Hz)
+            Default: 1 (Hz)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_internal_modulation_frequency(System.Double@)">
+            <summary>
+            Gets the PWM frequency.
+            </summary>
+            <param name="Frequency">
+            This parameter returns the PWM frequency in hertz.
+            
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_ttl_modulation_current(System.Double)">
+            <summary>
+            Sets the current used in the ttl modulation mode.
+            </summary>
+            <param name="Current">
+            This parameter specifies the constant current in ampere.
+            
+            Range:   0.0...2.0 (A)
+            Default: 0.0 (A)
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_ttl_modulation_current(System.Double@)">
+            <summary>
+            Gets the current used for the TTL modulation mode.
+            </summary>
+            <param name="Current">
+            This parameter returns the actual TTL modulation current in ampere.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_led_current_measurement(System.Double@)">
+            <summary>
+            Return last LED current measurement
+            </summary>
+            <param name="Current_Measurement">
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_led_voltage_measurement(System.Double@)">
+            <summary>
+            Return last LED voltage measurement
+            </summary>
+            <param name="Voltage_Measurement">
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_temperature_measurement(System.Double@)">
+            <summary>
+            Return last temperature measurement
+            </summary>
+            <param name="Temperature_Measurement">
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_beeper_state(System.Boolean)">
+            <summary>
+            Activates/deactivates the beeper
+            </summary>
+            <param name="State">
+            VI_ON = Beeper is active.
+            VI_OFF = Beeper is inactive.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_beeper_state(System.Boolean@)">
+            <summary>
+            Returns the state of the beeper
+            </summary>
+            <param name="State">
+            VI_ON = Beeper is active.
+            VI_OFF = Beeper is inactive.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_beeper_volume(System.Double)">
+            <summary>
+            Sets the beeper volume
+            </summary>
+            <param name="Volume">
+            Sets the volume of the beeper to 50% or 100%,
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_beeper_volume(System.Double@)">
+            <summary>
+            Sets the beeper volume in percent.
+            </summary>
+            <param name="Volume">
+            Returns the volume of the beeper in percentage from 0.0 to 1.0.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.setDispBright(System.Int32)">
+            <summary>
+            Sets the display brightness.
+            </summary>
+            <param name="Display_Brightness">
+            This parameter specifies the display brightness in percent.
+            
+            Range   : 0..100 (%)
+            Default : 100 (%)
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getDispBright(System.Int32@)">
+            <summary>
+            Gets the display brightness.
+            </summary>
+            <param name="Display_Brightness">
+            This parameter returns the display brightness in percent.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_auto_dimming(System.Boolean)">
+            <summary>
+            Activates/deactivates automatic dimming
+            </summary>
+            <param name="State">
+            VI_ON = Auto Dimming is active.
+            VI_OFF = Auto Dimming is inactive.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_auto_dimming(System.Boolean@)">
+            <summary>
+            Returns the state of automatic dimming
+            </summary>
+            <param name="State">
+            VI_ON = Auto Dimming is active.
+            VI_OFF = Auto Dimming is inactive.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.set_temperature_unit(System.Int32)">
+            <summary>
+            Sets the temperature unit
+            </summary>
+            <param name="Temperature_Unit">
+            Sets the temperature unit
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_temperature_unit(System.Int32@)">
+            <summary>
+            Returns the temperature unit
+            </summary>
+            <param name="Temperature_Unit">
+            Returns the temperature unit
+            
+            TLDC2200_TEMPUNIT_CEL = 0   // returns the temperature value in celsius
+            TLDC2200_TEMPUNIT_FAR = 1   // returns the temperature value in fahrenheit
+            TLDC2200_TEMPUNIT_KEL = 2   // returns the temperature value in kelvin
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getStatusRegister(System.Int32@)">
+            <summary>
+            Reads the content of the instruments status register. Refer to the instrument user's manual for more details on registers.
+            </summary>
+            <param name="Status_Register">
+            This parameter returns the status register value. (see manual for closer description)
+            
+            #define STAT_VCC_FAIL_CHANGED               0x0001
+            #define STAT_VCC_FAIL                       0x0002
+            #define STAT_OTP_CHANGED                    0x0004
+            #define STAT_OTP                            0x0008
+            #define STAT_NO_LED1_CHANGED                0x0010
+            #define STAT_NO_LED1                        0x0020
+            #define STAT_LED_OPEN1_CHANGED              0x0040
+            #define STAT_LED_OPEN1                      0x0080
+            #define STAT_LED_LIMIT1_CHANGED             0x0100
+            #define STAT_LED_LIMIT1                     0x0200
+            #define STAT_IFC_REFRESH_CHANGED            0x1000
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_measurement_status_register(System.Int32@)">
+            <summary>
+            Reads the content of the instruments status register. Refer to the instrument user's manual for more details on registers.
+            </summary>
+            <param name="Measurement_Status_Register">
+            This parameter returns the status register value. (see manual for closer description)
+            
+            #define STAT_VCC_FAIL_CHANGED               0x0001
+            #define STAT_VCC_FAIL                       0x0002
+            #define STAT_OTP_CHANGED                    0x0004
+            #define STAT_OTP                            0x0008
+            #define STAT_NO_LED1_CHANGED                0x0010
+            #define STAT_NO_LED1                        0x0020
+            #define STAT_LED_OPEN1_CHANGED              0x0040
+            #define STAT_LED_OPEN1                      0x0080
+            #define STAT_LED_LIMIT1_CHANGED             0x0100
+            #define STAT_LED_LIMIT1                     0x0200
+            #define STAT_IFC_REFRESH_CHANGED            0x1000
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_standard_operation_register(System.Int32@)">
+            <summary>
+            Reads the content of the instruments status register. Refer to the instrument user's manual for more details on registers.
+            </summary>
+            <param name="Standard_Operation_Register">
+            This parameter returns the status register value. (see manual for closer description)
+            
+            #define STAT_VCC_FAIL_CHANGED               0x0001
+            #define STAT_VCC_FAIL                       0x0002
+            #define STAT_OTP_CHANGED                    0x0004
+            #define STAT_OTP                            0x0008
+            #define STAT_NO_LED1_CHANGED                0x0010
+            #define STAT_NO_LED1                        0x0020
+            #define STAT_LED_OPEN1_CHANGED              0x0040
+            #define STAT_LED_OPEN1                      0x0080
+            #define STAT_LED_LIMIT1_CHANGED             0x0100
+            #define STAT_LED_LIMIT1                     0x0200
+            #define STAT_IFC_REFRESH_CHANGED            0x1000
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getWavelength(System.Single@)">
+            <summary>
+            This function returns the wavelength information of the connected LED head.
+            </summary>
+            <param name="Wavelength">
+            This parameter returns the wavelength in [nm] of the connected LED head. In case there is no information available this value will be set to zero.
+            
+            Notes:
+            You may pass VI_NULL if you do not need this value.
+            
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.getForwardBias(System.Single@)">
+            <summary>
+            This function returns the forward bias in [V] of the connected LED head.
+            </summary>
+            <param name="Forward_Bias">
+            This parameter returns the forward bias in [V] of the connected LED head. In case there is no information available this value will be set to zero.
+            
+            
+            Notes:
+            (1) You may pass VI_NULL if you do not need this value.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.is_equipped_with_temperature_sensor(System.Boolean@)">
+            <summary>
+            This function returns the forward bias in [V] of the connected LED head.
+            </summary>
+            <param name="Temperature_Sensor_Available">
+            This parameter returns the forward bias in [V] of the connected LED head. In case there is no information available this value will be set to zero.
+            
+            
+            Notes:
+            (1) You may pass VI_NULL if you do not need this value.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.get_head_temperature_sensor_range(System.Double@,System.Double@)">
+            <summary>
+            This function returns the forward bias in [V] of the connected LED head.
+            </summary>
+            <param name="Minimum">
+            
+            </param>
+            <param name="Maximum">
+            
+            </param>
+            <param name="Hot">
+            This parameter returns the forward bias in [V] of the connected LED head. In case there is no information available this value will be set to zero.
+            
+            
+            Notes:
+            (1) You may pass VI_NULL if you do not need this value.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.is_equipped_with_fan(System.UInt16,System.Boolean@)">
+            <summary>
+            This function returns the forward bias in [V] of the connected LED head.
+            </summary>
+            <param name="Terminal">
+            Select output terminal: 
+             
+            1 = 10A/12Pin connector
+            2 = 2A/4Pin connector
+            
+            </param>
+            <param name="Fan_Available">
+            This parameter returns the forward bias in [V] of the connected LED head. In case there is no information available this value will be set to zero.
+            
+            
+            Notes:
+            (1) You may pass VI_NULL if you do not need this value.
+            </param>
+            <returns>
+            This is the error code returned by the function call. For error codes and descriptions see &lt;Error Message&gt;.
+            </returns>
+        </member>
+        <member name="M:Thorlabs.TLDC2200_64.Interop.TLDC2200.Dispose">
+            <summary>
+            Release the resources on the Thorlabs DC2200 instrument
+            </summary>
+        </member>
+        <member name="P:Thorlabs.TLDC2200_64.Interop.TLDC2200.Handle">
+            <summary>
+            Gets the instrument handle.
+            </summary>
+            <value>
+            The value is the IntPtr that represents the handle to the instrument.
+            </value>
+        </member>
+        <member name="T:Thorlabs.TLDC2200_64.Interop.TLDC2200_Output_Terminals">
+            <summary>
+            Defines which are used for the output terminal functions
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Output_Terminals.OutputTerminal10a">
+            <summary>
+            uses the output 10A with 12 Pins
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Output_Terminals.OutputTerminal2a">
+            <summary>
+            uses the output 2A with 4 Pins 
+            </summary>
+        </member>
+        <member name="T:Thorlabs.TLDC2200_64.Interop.TLDC2200_Modulation_Shapes">
+            <summary>
+            Defines which are used for modulation shape functions
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Modulation_Shapes.InternalModulationShapeSine">
+            <summary>
+            Sine modulation shape
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Modulation_Shapes.InternalModulationShapeSquare">
+            <summary>
+            square modulation shape
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Modulation_Shapes.InternalModulationShapeTriangle">
+            <summary>
+            triangle modulation shape
+            </summary>
+        </member>
+        <member name="T:Thorlabs.TLDC2200_64.Interop.TLDC2200_Temperature_Units">
+            <summary>
+            Defines which are used for the temperature unit functions
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Temperature_Units.TempunitCel">
+            <summary>
+            temperature value in celsius 
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Temperature_Units.TempunitFar">
+            <summary>
+            temperature value in fahrenheit 
+            </summary>
+        </member>
+        <member name="F:Thorlabs.TLDC2200_64.Interop.TLDC2200_Temperature_Units.TempunitKel">
+            <summary>
+            temperature value in kelvin  
+            </summary>
+        </member>
+    </members>
+</doc>
